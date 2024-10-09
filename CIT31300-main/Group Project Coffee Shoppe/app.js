@@ -3,7 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { getDbConnection, setupDatabase } from './database.js'; // Import the setupDatabase function
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 4000;
 
 // Define __dirname correctly
 const __filename = fileURLToPath(import.meta.url);
